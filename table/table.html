@@ -27,11 +27,11 @@
 
               <tr>
                 <td class="hour">07:30</td>
-                <td onclick="showDialogBox()">Geography</td>
-                <td>Biology</td>
-                <td>Math</td>
-                <td>Chemistry</td>
-                <td>Bulgarian</td>
+                <td onclick="showDialogBox(1,730)">Geography</td>
+                <td onclick="showDialogBox(2,730)">Biology</td>
+                <td onclick="showDialogBox(3,730)">Math</td>
+                <td onclick="showDialogBox(4,730)">Chemistry</td>
+                <td onclick="showDialogBox(5,730)">Bulgarian</td>
               </tr>
 
               <tr>
@@ -104,7 +104,7 @@
             Add Home Work
         </div>
         <div class="dialog-area">
-            <textarea rows="5" cols="25" > </textarea>
+            <textarea id="homeworkInput" rows="5" cols="25" > </textarea>
         </div>
         <div class="dialog-area">
             <div onclick="add()" class="button green left">Add</div>
@@ -113,5 +113,12 @@
     </div>
 </div>
 <div class="curtain invisible"></div>
+
+<div class="hidden data-div">
+  <input type="text" class="current-hour">
+  <input type="text" class="current-day"> 
+
+
+</div>
 </body>
 </html>
